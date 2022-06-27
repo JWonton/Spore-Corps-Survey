@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Spore Corps Static Survey</title>
+</head>
+
+<body>
+    <h1>Spore Corps Static Survey</h1>
+    <p>A sign up sheet for spores and spore adjacents to fill out in preparation for the next raid tier.</p>
+    <div class="form-container">
+        <form>
+            <h2>General Information</h2>
+            <fieldset>
+                <label>Enter Your In Game Name: <input type="text" name="ign" required /></label>
+                <label>Enter Your Discord Handle: <input type="text" name="discord" required /></label>
+                <label>Enter Your Timezone: <input type="text" name="timezone" required /></label>
+                <div class="Lead">
+                    <!-- Seperate Div For Alignment CSS later on-->
+                    <p>Are You Interested In Leading A Static?</p>
+                    <label><input type="radio" name="leader" class="inline" required />Yes</label>
+                    <label><input type="radio" name="leader" class="inline" required />No</label>
+                </div>
+                <div class="lead">
+                    <!-- Seperate Div for alignment css later on-->
+                    <p>Are you comfortable being in voice chat during raid hours? (speaking is not mandatory)</p>
+                    <label><input type="radio" name="vc" class="inline" required />Yes</label>
+                    <label><input type="radio" name="vc" class="inline" required />No</label>
+                </div>
+                <div class="lead">
+                    <p>Are you looking to be a permanent static member or a fill?</p>
+                    <label><input type="radio" name="perm" class="inline" required />I want a permanent static</label>
+                    <label><input type="radio" name="perm" class="inline" required />I'm just looking to fill when
+                        needed</label>
+
+                </div>
+                <div class="lead">
+                    <p>What Kind Of Static Are You Looking For?</p>
+                    <label><input type="radio" name="type" class="inline" required />Casual (1-2 meetings per
+                        week)</label>
+                    <label><input type="radio" name="type" class="inline" required />Midcore (3 meetings per
+                        week)</label>
+                    <label><input type="radio" name="type" class="inline" required />Hardcore (4+ meetings per
+                        week)</label>
+
+                </div>
+                <div class="lead">
+                    <p>Previous Raiding Experience</p>
+                    <label><input type="radio" name="exp" class="inline" required />No Experience</label>
+                    <label><input type="radio" name="exp" class="inline" required />I have only cleared extremes (no
+                        savage)</label>
+                    <label><input type="radio" name="exp" class="inline" required />I have only cleared Savage with
+                        echo</label>
+                    <label><input type="radio" name="exp" class="inline" required />I have savage without echo/ultimate
+                        experience</label>
+                </div>
+                <div>
+                    <p>Are You Open To Raiding With Players Without Savage Experience?</p>
+                    <label><input type="radio" name="new" class="inline" required />Yes</label>
+                    <label><input type="radio" name="new" class="inline" required />No</label>
+                </div>
+
+            </fieldset>
+            <h2>Role Preference</h2>
+            <fieldset>
+                <!-- Preferred role section, required to select one-->
+                <h3> Preferred Role</h3>
+                <label name="tank"><input type="radio" name="role" class="inline" required /> Tank </label>
+                <label name="healer"><input type="radio" name="role" class="inline" required />Shield Healer</label>
+                <label name="healer"><input type="radio" name="role" class="inline" required />Regen Healer</label>
+                <label name="dps"><input type="radio" name="role" class="inline" required />Melee DPS</label>
+                <label name="dps"><input type="radio" name="role" class="inline" required />Physical Ranged DPS</label>
+                <label name="dps"><input type="radio" name="role" class="inline" required />Caster DPS</label>
+                <!-- Preferred Job Selction, required 1-->
+                <!-- Tanks-->
+                <h3>Preferred Job</h3>
+                <label name="tank"><input type="radio" name="job1" class="inline" required />Warrior</label>
+                <label name="tank"><input type="radio" name="job1" class="inline" required />Paladin</label>
+                <label name="tank"><input type="radio" name="job1" class="inline" required />Gunbreaker</label>
+                <label name="tank"><input type="radio" name="job1" class="inline" required />Dark Knight</label>
+                <!-- Healers -->
+                <label name="healer"><input type="radio" name="job1" class="inline" required />White Mage</label>
+                <label name="healer"><input type="radio" name="job1" class="inline" required />Astrologian</label>
+                <label name="healer"><input type="radio" name="job1" class="inline" required />Sage</label>
+                <label name="healer"><input type="radio" name="job1" class="inline" required />Scholar</label>
+                <!--- DPS -->
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Samurai</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Monk</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Dragoon</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Reaper</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Ninja</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Bard</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Machinist</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Dancer</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Red Mage</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Black Mage</label>
+                <label name="dps"><input type="radio" name="job1" class="inline" required />Summoner</label>
+                <!-- Other jobs pref, can select multiple-->
+                <!--Tanks-->
+                <h3>I Am Also Willing To Play (Flex Jobs)</h3>
+                <label name="tank"><input type="checkbox" name="job2" class="inline">Warrior</label>
+                <label name="tank"><input type="checkbox" name="job2" class="inline">Paladin</label>
+                <label name="tank"><input type="checkbox" name="job2" class="inline">Gunbreaker</label>
+                <label name="tank"><input type="checkbox" name="job2" class="inline">Dark Knight</label>
+                <!--healers-->
+                <label name="healer"><input type="checkbox" name="job2" class="inline">White Mage</label>
+                <label name="healer"><input type="checkbox" name="job2" class="inline">Astrologian</label>
+                <label name="healer"><input type="checkbox" name="job2" class="inline">Sage</label>
+                <label name="healer"><input type="checkbox" name="job2" class="inline">Scholar</label>
+                <!--dps-->
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Samurai</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Monk</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Dragoon</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Reaper</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Ninja</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Bard</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Machinist</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Dancer</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Red Mage</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Black Mage</label>
+                <label name="dps"><input type="checkbox" name="job2" class="inline">Summoner</label>
+
+
+
+            </fieldset>
+            <h2>Availability</h2>
+            <!-- Availability -->
+            <fieldset>
+                <h3>Days Available To Raid</h3>
+                <label><input type="checkbox" name="day" class="inline" />Monday</label>
+                <label><input type="checkbox" name="day" class="inline" />Tuesday</label>
+                <label><input type="checkbox" name="day" class="inline" />Wednesday</label>
+                <label><input type="checkbox" name="day" class="inline" />Thursday</label>
+                <label><input type="checkbox" name="day" class="inline" />Friday</label>
+                <label><input type="checkbox" name="day" class="inline" />Saturday</label>
+                <label><input type="checkbox" name="day" class="inline" />Sunday</label>
+                <label><input type="checkbox" name="day" class="inline" />TBD (Will inform later)</label>
+                <p>Time Availability (use your time zone)</p>
+                <select name="hour">
+                    <option value="">(select one)</option>
+                    <option value="1">1:00</option>
+                    <option value="2">2:00</option>
+                    <option value="3">3:00</option>
+                    <option value="4">4:00</option>
+                    <option value="5">5:00</option>
+                    <option value="6">6:00</option>
+                    <option value="7">7:00</option>
+                    <option value="8">8:00
+                    </option>
+                    <option value="9">9:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                </select>
+                <select name="ampm">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+                <!-- Not sure how to have this text here because <p> tag is a line break-->
+                to
+                <select name="hour">
+                    <option value="">(select one)</option>
+                    <option value="1">1:00</option>
+                    <option value="2">2:00</option>
+                    <option value="3">3:00</option>
+                    <option value="4">4:00</option>
+                    <option value="5">5:00</option>
+                    <option value="6">6:00</option>
+                    <option value="7">7:00</option>
+                    <option value="8">8:00
+                    </option>
+                    <option value="9">9:00</option>
+                    <option value="10">10:00</option>
+                    <option value="11">11:00</option>
+                    <option value="12">12:00</option>
+                </select>
+                <select name="ampm">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+
+
+            </fieldset>
+        </form>
+    </div>
+    <input type="submit" value="Submit" />
+
+</body>
+
+</html>
